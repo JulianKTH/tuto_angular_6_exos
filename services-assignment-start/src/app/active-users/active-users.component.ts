@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {UsersService} from '../shared/Users.service';
 
 @Component({
@@ -18,6 +18,6 @@ export class ActiveUsersComponent implements OnInit {
   }
 
   onSetToInactive(id: number) {
-    this.usersService.onSetToInactive(id);
+    this.usersService.setToInactive(id);
   }
 }

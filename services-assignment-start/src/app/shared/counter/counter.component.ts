@@ -17,4 +17,8 @@ export class CounterComponent implements OnInit {
     this.deactivations = this.counterService.deactivations;
   }
 
+  getCounterService() {
+    return this.counterService;
+  }
+
 }

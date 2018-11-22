@@ -4,9 +4,11 @@ export class CounterService {
 
   addActivation() {
     this.activations++;
+    console.log('in addActivation, this.activations', this.activations);
   }
 
   addDeactivation() {
     this.deactivations++;
+    console.log('in addDeactivation, this.deactivations', this.deactivations);
   }
 }
